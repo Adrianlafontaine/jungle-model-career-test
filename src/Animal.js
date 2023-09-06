@@ -6,10 +6,12 @@ export default class Animal {
 
     makeSound () {
         if(this.species === 'monkey') {
+            console.log(`${this.species} made a sound`)
             this.energy -= 4
         } else if (this.energy < 0) {
             console.log('No energy left.') 
         } else {
+            console.log(`${this.species} made a sound`)
             this.energy -= 3
         }
     }
@@ -18,16 +20,20 @@ export default class Animal {
         if (food === 'grain' && this.species === 'tiger') {
             console.log('Do not feed the Tiger with grain.')
         } else if (this.species === 'monkey') {
+            console.log(`The ${this.species} ate ${food}`)
             this.energy += 2
         } else {
+            console.log(`The ${this.species} ate ${food}`)
             this.energy += 5
         }
     }
 
     sleep(){
         if(this.species === 'tiger') {
+            console.log(`The ${this.species} slept`)
             this.energy += 5
         } else {
+            console.log(`The ${this.species} slept`)
             this.energy += 10
         }
     }

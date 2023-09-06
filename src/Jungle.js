@@ -12,10 +12,17 @@ export default class Jungle {
 
     randomFrenzy() {
         const activities = ['eat', 'sleep', 'makeSound'] 
+        const food = [ 'meat', 'fish', 'bugs', 'grain']
         this.animals.forEach((animal) => {
             const randomNumber = Math.floor(Math.random() * activities.length)
             const randomActivity = activities[randomNumber]
-            animal[randomActivity]()
+            const randomFood = food[Math.floor(Math.random() * food.length)]
+
+            if(randomActivity === 'eat') {
+                animal[randomActivity](randomFood)
+            } else {
+                animal[randomActivity]()
+            }
             animal.reportEnergy()
         })
     }
