@@ -1,5 +1,11 @@
 # Jungle Model Example
 
+### Installation
+
+To run this code just type `npm start` on the console.
+
+### Description
+
 This code tries to resolve the following code challenge:
 
 Create the objects that you feel would best model a jungle using your best coding practices based on the following requirements, using your language of choice.
@@ -18,5 +24,5 @@ Create the objects that you feel would best model a jungle using your best codin
     - If a monkey doesn't have enough energy to play they say "Monkey is too tired".
 - The jungle contains several types of food; meat, fish, bugs and grain.
     - Tigers can't eat grain because they have sensitive digestive systems.
-    
+
 *Bonus Item* : The jungle can have each animal perform a random activity out of the ones possible for that animal.
